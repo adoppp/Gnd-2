@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GND</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -34,22 +40,48 @@
 
         <address class="address-header">
           <svg class="svg-phone">
-            <use></use>
+            <use href="./img/symbol-defs.svg#icon-phone-black-18dp-2"></use>
           </svg>
-          <a href="tel:+380679254523">+380679254523</a>
+          <a href="tel:+380679254523" class="phone-link">+380679254523</a>
         </address>
 
-        <button class="btn-account">
+        <a class="btn-account" href="./log-in.html">
           My account
           <svg class="account">
-            <use></use>
+            <use href="./img/symbol-defs.svg#icon-person-black-18dp-1"></use>
           </svg>
-        </button>
+        </a>
 
-        <svg class="bag">
-          <use></use>
-        </svg>
+        <a href="./bag.html">
+          <svg class="bag">
+            <use href="./img/symbol-defs.svg#icon-bag"></use>
+          </svg>
+        </a>
       </div>
     </header>
+
+    <main>
+      <section class="background-up">
+        <div class="container-for-section">
+          <div class="container-text">
+            <h1 class="title-sec-one">Ми</h1>
+            <p class="description-sec-one">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <a href="./shop.html" class="btn-go-shopping">Go Shopping</a>
+          </div>
+          <div class="container-img"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

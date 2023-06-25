@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul,
@@ -50,12 +51,24 @@ a {
 :root {
     --gray: #9BA4B5;
     --blueee: #212A3E;
+    --blue-2: #394867;
 }
+
+/* header */
 
 .header {
     border: 1px solid var(--gray);
     background: var(--blueee);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: center;
 }
 
 .list-nav-header {
@@ -75,8 +88,8 @@ a {
     content: '';
     position: absolute;
     background-color: var(--gray);
-    top: 0;
-    left: 80px;
+    top: -8px;
+    left: 120px;
     height: 40px;
     width: 1px;
 }
@@ -85,8 +98,8 @@ a {
     content: '';
     position: absolute;
     background-color: var(--gray);
-    top: 0;
-    left: 80px;
+    top: -8px;
+    left: 120px;
     height: 40px;
     width: 1px;
 }
@@ -114,4 +127,62 @@ a {
 
 .link-nav:hover:before {
     width: 100%;
+}
+
+.address-header {
+    display: flex;
+    align-items: center;
+}
+
+.svg-phone {
+    max-width: 14px;
+    max-height: 18px;
+}
+
+.phone-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+    font-style: normal;
+}
+
+.btn-account {
+    border-radius: 5px;
+    background: var(--blue-2);
+    cursor: pointer;
+    color: var(--gray);
+    font-size: 16px;
+    text-transform: capitalize;
+    max-height: 24px;
+    padding: 0 12px 0 20px;
+    align-items: center;
+    display: flex;
+    margin-right: 40px;
+}
+
+.address-header {
+    margin-right: 48px;
+}
+
+.account {
+    max-width: 18px;
+    max-height: 18px;
+    margin-left: 12px;
+}
+
+.nav-header {
+    margin-right: 100px;
+}
+
+.bag {
+    max-width: 18px;
+    max-height: 22px;
+}
+
+.logo-link {
+    margin-right: 120px;
+}
+
+.background-up {
+    background: linear-gradient(180deg, rgba(155, 164, 181, 0.62) 0%, rgba(217, 217, 217, 0.00) 100%);
 }
